@@ -1,0 +1,33 @@
+@import (reference) '~common/styles/themes.less';
+@import (reference) '~common/styles/mixins.less';
+
+.view-box {
+	display:flex;
+	flex-direction: column;
+}
+
+.view-bar {
+	width: 100%;
+	padding: 10px;
+	margin: 5px;
+	display: table;
+	border-radius: 5px solid black;
+	font-size: @caption-font-size;
+	align: center;
+	justify-content: center;
+	table-layout: fixed;
+
+	.pet-display {}
+
+	.action-bar {
+		height: 30px;
+	}
+
+	.action-button {
+		color: @gray-600;
+		padding: 10px;
+		display: table-cell;
+		flex-direction: column;
+		align-items: center;
+	}
+}
